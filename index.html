@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donwload Calculator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h2 class="title">DOWNLOAD CALCULATOR</h2>
+    </header>
+    <section>
+        <div id="container-archiveSize">
+            <h5 class="title-archiveSize">Tamanho do Arquivo</h5>
+            <input type="number" name="archiveSize" id="archiveSize"> 
+            <select name="sizes" id="sizes" onchange="selectSize()">
+                <option value="byte">Byte</option>
+                <option value="kilobyte">Kilobyte</option>
+                <option value="megabyte">Megabyte</option>
+                <option value="gigabyte">Gigabyte</option>
+            </select>
+        </div>
+
+        <div id="container-netSpeed">
+            <h5 class="title-netSpeed">Velocidade de Conexão</h5>
+            <input type="number" name="netSpeed" id="netSpeed">
+            <select name="speed" id="speed" onchange="selectSpeed()">
+                <option value="kbps">Kbps</option>
+                <option value="KBps">KBps</option>
+                <option value="mbps">Mbps</option>
+            </select>
+        </div>
+        <div id="container-time">
+            <h5 id="title-time">Tempo: (DD:HH:MM:SS)</h5>
+        </div>
+        <div id="container-button">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+    </section>
+    <footer>
+        <div class="iconslist">
+            <a href="https://github.com/Ohlavrac"><img class="icons" src="./icons/logotipo-do-github.svg" alt="github"></a>
+            <a href="https://www.instagram.com/ohlavrac.dart/"><img class="icons" src="./icons/instagram.svg" alt="instagram"></a>
+            <a href="https://www.twitch.tv/ohlavracoaoj"><img class="icons" src="./icons/twitch.svg" alt="twitch"></a>
+        </div>
+        <h5 class="by">By: Ohlavrac</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
